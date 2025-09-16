@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
     <title>Início</title>
 </head>
-<body>
+<body class="body-login">
     <!--Parte Central da página, onde fica o título, imagem e texto principais-->
-    <div class="divisao-principal">
+    <div class="divisao-principal-login">
         <h1 class="titulo">Cadastro</h1>
         <hr size="2" color="black"></hr>
-        <div class="login-form"><center>
-            <form onsubmit="location.href='sust-ambiental.html';" method="put">
+        <div>
+            <form class="login-form" onsubmit="location.href='sust-ambiental.html';" method="put">
                 <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required><br><br>
+                <input placeholder="Digite seu nome de usuário:" type="text" id="username" name="username" required><br><br>
+                <label for="email">E-mail:</label>
+                <input placeholder="exemplo@exemplo.com" type="email" id="email" name="email" required><br><br>
                 
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required><br><br>
+                <input placeholder="Digite sua senha:" type="password" id="password" name="password" required><br><br>
                 <label for="password">Confirmar senha:</label>
-                <input type="password" id="password" name="password" required><br><br>
+                <input placeholder="Repita sua senha:" type="password" id="password" name="password" required><br><br>
 
-                <button onclick="location.href='index.html';" type="submit">Cadastrar</button>
-                <a href="index.html">Já tenho uma conta? Fazer login</a>
+                <button class="botao-login" onclick="location.href='index.html';" type="submit">Cadastrar</button>
+                <a class="tem-conta" href="index.html">Já tenho uma conta? Fazer login</a>
             </form>
-    </div></center>
+    </div>
 </body>
 </html>

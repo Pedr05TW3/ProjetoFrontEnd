@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
     <title>Início</title>
 </head>
-<body>
+<body class="body-login">
     <!--Parte Central da página, onde fica o título, imagem e texto principais-->
-    <div class="divisao-principal">
-        <h1 class="titulo">Já tem uma conta? Faça login</h1>
+    <div class="divisao-principal-login">
+        <h1 class="titulo">Login</h1>
         <hr size="2" color="black"></hr>
-        <div class="login-form">
-            <form>
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required><br><br>
+        <div >
+            <form class="login-form">
+                <label for="username">Usuário/e-mail:</label>
+                <input placeholder="Digite seu nome de usuário/e-mail:" type="text" id="username" name="username" required><br><br>
                 
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required><br><br>
+                <input placeholder="Digite sua senha:" type="password" id="password" name="password" required><br>
+                <a class="tem-conta" id="esqueci-senha" href="">Esqueci minha senha</a><br><br>
+                <div id="esqueci-menu">
+								<ul id="lista-esqueci">
+									<li>Digite seu e-mail de recuperação de senha:</li>
+									<li><input placeholder="exemplo@exemplo.com" type="email" id="email" name="email" required></li>
+									<li><button class="botao-login" id="botao-esqueci" onclick="enviado()" type="button">Enviar</button></li>
+									<li id="mensagem-enviada"></li>
+								</ul>
+                                </div>
 
-                <button onclick="location.href='sust-ambiental.html';" type="submit">Login</button>
-                <a href="cadastro.html">Não tenho uma conta? Cadastrar</a>
+                <button class="botao-login" onclick="location.href='sust-ambiental.html';" type="submit">Login</button>
+                <a class="tem-conta" href="cadastro.html">Não tenho uma conta? Cadastrar</a>
             </form>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+<!-- Fim do código do chat -->
     </div>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>

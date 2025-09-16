@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles-chat.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+     <link rel="stylesheet" type="text/css" href="styles/styles-chat2.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
 
     <title>Chat</title>
 </head>
 <body>
+
+	<!--Menu lateral, com os links para as páginas-->
+    <nav class="menu-lateral"> 
+        <a class="g" href="sust-ambiental.html"><img height="70px" src="assets/logo.png" alt="Símbolo de sustentabilidade ambiental"></a>
+        <p><a href="sust-ambiental.html">Sustentabilidade Ambiental</a></p>
+        <hr size="1" color="black"></hr>
+        <p><a href="como-ser.html">Como ser mais sustentável?</p></a>
+        <p><a href="tipos.html">Tipos de Sustentabilidade</p></a>
+        <p><a href="pontos.html">Pontos de Reciclagem</p></a>
+        <p><a href="guias.html">Guias e Tutoriais</p></a>
+        <p><b><a href="chat.html">Chat</p></b></a>
+
+        <div class="contato"><p><a href="contato.html">Contato</p></a>
+        <p><a href="sobre.html">Sobre nós</p></a></div>
+    </nav>
+
     <div class="divisao-principal">
     <h1>Chat</h1>
     <hr size="2" color="black"></hr>
@@ -95,10 +111,11 @@
 								</div>
 							</div>
 						</div>
+						<div class="envio">
 						<div class="card-footer">
 							<div class="input-group" id="mensagem">
                                 
-								<div class="input-group-append">
+								<div class="input-group-append1">
 									<span class="input-group-text attach_btn" id="action_menu_btn"><i class="fas fa-paperclip"></i></span>
 								<div class="action_menu">
 								<ul>
@@ -108,6 +125,7 @@
 									<li><i class="fas fa-ban"></i> Desenho</li>
 								</ul>
                                 </div>
+								
                                 
                                 </div>
 								<input type="text" id="caixa-mensagem" placeholder="Escreva aqui..."></input>
@@ -117,39 +135,38 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
+		
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 <!-- Fim do código do chat -->
 </div>
+</div>
     
-
-
-    <!--Menu lateral, com os links para as páginas-->
-    <nav class="menu-lateral"> 
-        <a class="g" href="sust-ambiental.html"><img height="70px" src="assets/logo.png" alt="Símbolo de sustentabilidade ambiental"></a>
-        <p><a href="sust-ambiental.html">Sustentabilidade Ambiental</a></p>
-        <hr size="1" color="black"></hr>
-        <p><a href="como-ser.html">Como ser mais sustentável?</p></a>
-        <p><a href="tipos.html">Tipos de Sustentabilidade</p></a>
-        <p><a href="pontos.html">Pontos de Reciclagem</p></a>
-        <p><a href="guias.html">Guias e Tutoriais</p></a>
-        <p><b><a href="chat.html">Chat</p></b></a>
-
-        <div class="contato"><p><a href="contato.html">Contato</p></a>
-        <p><a href="sobre.html">Sobre nós</p></a></div>
-    </nav>
-
     <!-- Parte lateral onde ficam as notícias recentes-->
-    <h2>Notícias Recentes</h2>
-    <hr size="1" color="black"></hr>
-    <div>
-        <img height="169px" src="assets/latas-de-lixo.webp" alt="Latas de lixo"><p>COLETA DE LIXO SUSTENTÁVEL EM ARACAJU</p>
-        <img height="169px" src="assets/reciclagem-tecnicas.webp" alt="Reciclagem e lixo ao redor"><p>MELHORES TÉCNICAS DE RECICLAGEM</p>
-        <img height="169px" src="assets/lixoes-impacto.webp" alt="Lixão e algumas pessoas andando sobre o lixo"><p>COMO OS LIXÕES IMPACTAM A SOCIEDADE</p>
-        <img height="169px" src="assets/novos-caminhoes-aju.jfif" alt="Caminhão de lixo e garis"><p>VEREADOR ACOMPANHA ENTREGA DE NOVOS CAMINHÕES DE LIXO EM ARACAJU</p>
+	<div class="noticias-recentes">
+    <h3 style="margin-bottom: 0px;">Notícias Recentes</h3>
+    <hr size="2" color="black"></hr>
+    <div class="noticia-item">
+        <img height="200px" src="assets/latas-de-lixo.webp" alt="Latas de lixo">
+        <div class="texto-noticia">COLETA DE LIXO SUSTENTÁVEL EM ARACAJU</div>
     </div>
+    <div class="noticia-item">
+        <img height="200px" src="assets/reciclagem-tecnicas.webp" alt="Reciclagem e lixo ao redor">
+        <div class="texto-noticia">MELHORES TÉCNICAS DE RECICLAGEM</div>
+    </div>
+    <div class="noticia-item">
+        <img height="200px" src="assets/lixoes-impacto.webp" alt="Lixão e algumas pessoas andando sobre o lixo">
+        <div class="texto-noticia">COMO OS LIXÕES IMPACTAM A SOCIEDADE</div>
+    </div>
+    <div class="noticia-item">
+        <img height="200px" src="assets/novos-caminhoes-aju.jfif" alt="Caminhão de lixo e garis">
+        <div class="texto-noticia">VEREADOR ACOMPANHA ENTREGA DE NOVOS CAMINHÕES...</div>
+        
+    </div>
+     </div>
 
     <script src="scripts/script.js"></script>
 </body>
